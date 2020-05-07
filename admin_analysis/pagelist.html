@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>코즈볼 관리자 - 피부 분석용 데이터 수집</title>
+        <style type="text/css">
+            body{padding:20px;position:relative;}
+            *{margin:0;padding:0;font-size:12px;color:#222;line-height:1.5em;font-family:'NanumGothic';}
+            h1{margin-bottom:20px;font-size:20px;text-align: center;}
+            table{width:100%;border-collapse:collapse;margin: 0 auto;}
+            table th,
+            table td{border:1px solid #ccc;padding:4px 10px;word-break: keep-all}
+            table th{background:#222;color:#fff;padding:10px;font-size:14px;}
+            table td a{color:#7324ce;text-decoration:none;}
+            table td a:hover{text-decoration:underline;}
+            table tbody tr:hover{background-color: #fdecec;}
+            .noteTable{display: table;width: 100%;}
+            .noteTable .date{display: table-cell;color: #e04545;width: 40px;}
+            .noteTable .note{display: table-cell;}
+            .center{text-align: center;}
+            .bg{background: #fff5f5;}
+            ul.float{position:absolute;right:20px;top:20px;}
+            ul.float li{list-style:none;border:1px solid #ccc;padding:2px 5px;display:inline-block;}
+            .end{background:#ffffcc;}
+            .ing{background:#f6b1a6;}
+            .list{text-align:center;padding:0 0 20px;}
+            .list a{text-decoration:none;margin:0 10px;}
+            .list a:hover{text-decoration:underline;}
+        </style>
+    </head>
+
+
+    <body>
+        <h1>코즈볼(피부 분석용 데이터 수집) Admin PAGELIST</h1>
+        <table>
+            <colgroup>
+                <col style="width:6%">
+                <col style="width:10%">
+                <col style="width:16%">
+                <col style="width:10%">
+                <col>
+                <col style="width:10%">
+                <col style="width:15%">
+                <col style="width:6%">
+                <col style="width:6%">
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Depth 1</th>
+                    <th>Depth 2</th>
+                    <th>Depth 3</th>
+                    <th>Depth 4</th>
+                    <th>File</th>
+                    <th>pageLink</th>
+                    <th>최초작업일</th>
+                    <th>수정일</th>
+                    <th></th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>로그인</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>/login/</td>
+                    <td><a target="_blank" href="content/login/login.html">login.html</a></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td></td>
+                    <td>
+                        <div class="noteTable">
+                            <div class="date"></div>
+                            <div class="note"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>회원관리</td>
+                    <td>list</td>
+                    <td></td>
+                    <td></td>
+                    <td>/member/</td>
+                    <td><a target="_blank" href="content/member/member_list.html">member_list.html</a></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td></td>
+                    <td>
+                        <div class="noteTable">
+                            <div class="date"></div>
+                            <div class="note">고객레벨변경, 로그아웃(공통)</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>view</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a target="_blank" href="content/member/member_view.html">member_view.html</a></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td></td>
+                    <td>
+                        <div class="noteTable">
+                            <div class="date"></div>
+                            <div class="note">코드등록상세, 미리보기</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>사진관리</td>
+                    <td>list</td>
+                    <td></td>
+                    <td></td>
+                    <td>/picture/</td>
+                    <td><a target="_blank" href="content/picture/picture_list.html">picture_list.html</a></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td></td>
+                    <td>
+                        <div class="noteTable">
+                            <div class="date"></div>
+                            <div class="note">미리보기</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>리워드관리</td>
+                    <td>list</td>
+                    <td></td>
+                    <td></td>
+                    <td>/reward/</td>
+                    <td><a target="_blank" href="content/reward/reward_list.html">reward_list.html</a></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td></td>
+                    <td>
+                        <div class="noteTable">
+                            <div class="date"></div>
+                            <div class="note">리워드개수변경</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>배너관리</td>
+                    <td>list</td>
+                    <td></td>
+                    <td></td>
+                    <td>/banner/</td>
+                    <td><a target="_blank" href="content/banner/banner_list.html">banner_list.html</a></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td></td>
+                    <td>
+                        <div class="noteTable">
+                            <div class="date"></div>
+                            <div class="note"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>비밀번호 변경</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>/util/</td>
+                    <td><a target="_blank" href="content/util/password.html">password.html</a></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td></td>
+                    <td>
+                        <div class="noteTable">
+                            <div class="date"></div>
+                            <div class="note"></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

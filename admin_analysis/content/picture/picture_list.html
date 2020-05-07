@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>코즈볼</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../resources/css/reset.css">
+    <link rel="stylesheet" href="../../resources/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../resources/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../../resources/css/adminlte.css">
+    <link rel="stylesheet" href="../../resources/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <!-- jQuery -->
+    <script src="../../resources/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../../resources/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- moment -->
+    <script src="../../resources/plugins/moment/moment.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../resources/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../../resources/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+</head>
+
+<body class="sidebar-mini layout-fixed layout-navbar-fixed">
+    <div class="wrapper">
+
+        <div id="header-include">
+            <!-- header include -->
+        </div>
+
+        <div class="body-container">
+            <div id="aside-include">
+                <!-- aside include -->
+            </div>
+
+            <div class="content-wrapper">
+                <div id="menutree">
+                    <span data-depth1 hidden>사진관리</span>
+                </div>
+
+                <div id="location-include">
+                    <!-- location include -->
+                </div>
+
+                <section class="content">
+                    <div class="container-fluid">
+
+                        <!-- content 시작 -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <div class="form-group">
+                                            <label>성별</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">선택</option>
+                                                <option value="">님</option>
+                                                <option value="">여</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>국적</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>주소지</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>생년월일</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control float-right" data-event="rangeDatepicker" id="date-range">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>세안 후 경과시간</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">5</option>
+                                                <option value="">10</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div class="form-group">
+                                            <label>스킨톤</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-dark">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-center table-hover table-striped table-valign-middle">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <span class="custom-checkbox custom-control without-label">
+                                                <input class="custom-control-input" type="checkbox" id="allchk" data-check="all">
+                                                <label for="allchk" class="custom-control-label"></label>
+                                            </span>
+                                        </th>
+                                        <th>번호</th>
+                                        <th>성별</th>
+                                        <th>국적</th>
+                                        <th>주소지</th>
+                                        <th>생년월일</th>
+                                        <th>전화번호</th>
+                                        <th>세안 후 경과시간</th>
+                                        <th>피부정보 등록일시</th>
+                                        <th>스킨톤</th>
+                                        <th>사진파일</th>
+                                        <th>미리보기</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox custom-control without-label">
+                                                <input class="custom-control-input" type="checkbox" id="chk1">
+                                                <label for="chk1" class="custom-control-label"></label>
+                                            </span>
+                                        </td>
+                                        <td>1</td>
+                                        <td>남</td>
+                                        <td>대한민국</td>
+                                        <td>서울시 강남구</td>
+                                        <td>yyyy.mm.dd</td>
+                                        <td>010-0000-0000</td>
+                                        <td>15분</td>
+                                        <td>2019. 07. 22 19:00</td>
+                                        <td>1</td>
+                                        <td><a href="#"><i class="fas fa-file-download"><span class="sr-only">저장</span></i></a></td>
+                                        <td><a href="#" data-toggle="modal" data-target="#modalPreview"><i class="fas fa-eye"><span class="sr-only">미리보기</span></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox custom-control without-label">
+                                                <input class="custom-control-input" type="checkbox" id="chk1">
+                                                <label for="chk1" class="custom-control-label"></label>
+                                            </span>
+                                        </td>
+                                        <td>1</td>
+                                        <td>남</td>
+                                        <td>대한민국</td>
+                                        <td>서울시 강남구</td>
+                                        <td>yyyy.mm.dd</td>
+                                        <td>010-0000-0000</td>
+                                        <td>15분</td>
+                                        <td>2019. 07. 22 19:00</td>
+                                        <td>1</td>
+                                        <td><a href="#"><i class="fas fa-file-download"><span class="sr-only">저장</span></i></a></td>
+                                        <td><a href="#" data-toggle="modal" data-target="#modalPreview"><i class="fas fa-eye"><span class="sr-only">미리보기</span></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox custom-control without-label">
+                                                <input class="custom-control-input" type="checkbox" id="chk1">
+                                                <label for="chk1" class="custom-control-label"></label>
+                                            </span>
+                                        </td>
+                                        <td>1</td>
+                                        <td>남</td>
+                                        <td>대한민국</td>
+                                        <td>서울시 강남구</td>
+                                        <td>yyyy.mm.dd</td>
+                                        <td>010-0000-0000</td>
+                                        <td>15분</td>
+                                        <td>2019. 07. 22 19:00</td>
+                                        <td>1</td>
+                                        <td><a href="#"><i class="fas fa-file-download"><span class="sr-only">저장</span></i></a></td>
+                                        <td><a href="#" data-toggle="modal" data-target="#modalPreview"><i class="fas fa-eye"><span class="sr-only">미리보기</span></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox custom-control without-label">
+                                                <input class="custom-control-input" type="checkbox" id="chk1">
+                                                <label for="chk1" class="custom-control-label"></label>
+                                            </span>
+                                        </td>
+                                        <td>1</td>
+                                        <td>남</td>
+                                        <td>대한민국</td>
+                                        <td>서울시 강남구</td>
+                                        <td>yyyy.mm.dd</td>
+                                        <td>010-0000-0000</td>
+                                        <td>15분</td>
+                                        <td>2019. 07. 22 19:00</td>
+                                        <td>1</td>
+                                        <td><a href="#"><i class="fas fa-file-download"><span class="sr-only">저장</span></i></a></td>
+                                        <td><a href="#" data-toggle="modal" data-target="#modalPreview"><i class="fas fa-eye"><span class="sr-only">미리보기</span></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox custom-control without-label">
+                                                <input class="custom-control-input" type="checkbox" id="chk1">
+                                                <label for="chk1" class="custom-control-label"></label>
+                                            </span>
+                                        </td>
+                                        <td>1</td>
+                                        <td>남</td>
+                                        <td>대한민국</td>
+                                        <td>서울시 강남구</td>
+                                        <td>yyyy.mm.dd</td>
+                                        <td>010-0000-0000</td>
+                                        <td>15분</td>
+                                        <td>2019. 07. 22 19:00</td>
+                                        <td>1</td>
+                                        <td><a href="#"><i class="fas fa-file-download"><span class="sr-only">저장</span></i></a></td>
+                                        <td><a href="#" data-toggle="modal" data-target="#modalPreview"><i class="fas fa-eye"><span class="sr-only">미리보기</span></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-wrap">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="table-bottom">
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-secondary">선택다운로드</button>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-secondary">전체다운로드</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- content 끝 -->
+
+                    </div>
+                    <!-- /.container-fluid -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+        </div>
+
+        <div id="footer-include">
+            <!-- footer include -->
+        </div>
+
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- modal : 미리보기 -->
+    <div class="modal fade" id="modalPreview">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">미리보기</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img src="../../resources/images/photo4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-gray" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">저장</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AdminLTE App -->
+    <script src="../../resources/js/adminlte.js"></script>
+    <!-- ui 관련 -->
+    <script src="../../resources/js/ui.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>
