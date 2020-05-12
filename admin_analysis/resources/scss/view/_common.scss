@@ -29,6 +29,10 @@
 
 input[type=password] {font-family: 'Nanum Gothic';}
 
+input[data-event=rangeDatepicker][readonly]{background-color: #fff;}
+
 .custom-control.without-label{margin-right: -0.5rem;margin-bottom: 0;}
 
 .search-simple{margin-top: 2rem;}
+
+.password-page{}
