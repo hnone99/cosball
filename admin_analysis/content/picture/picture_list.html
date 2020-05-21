@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../resources/css/reset.css">
     <link rel="stylesheet" href="../../resources/plugins/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../../resources/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../../resources/plugins/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="../../resources/css/adminlte.css">
     <link rel="stylesheet" href="../../resources/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <link rel="stylesheet" href="../../resources/css/style.css">
@@ -82,12 +83,21 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>생년월일</label>
-                                            <div class="input-group">
+                                            <div class="row row-10 align-items-center">
+                                                <div class="col">
+                                                    <input type="text" class="form-control"  data-event="singleDatepicker" readonly>
+                                                </div>
+                                                <div class="col-auto">~</div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control"   data-event="singleDatepicker" readonly>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                                 </div>
                                                 <input type="text" class="form-control float-right" data-event="rangeDatepicker" id="date-range" readonly>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="col-md-2">

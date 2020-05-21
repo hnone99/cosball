@@ -22,11 +22,10 @@ $(document).ready(function () {
 
     //https://www.daterangepicker.com/
     //single datepicker
-    $('[data-event="singleDatepicker"]').daterangepicker({
-        singleDatePicker: true,
-        locale: {
-            format: 'YYYY-MM-DD'
-        }
+    $('[data-event="singleDatepicker"]').datepicker({
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: 'yy-mm-dd'
     });
     //range datepicker
     $('[data-event="rangeDatepicker"]').daterangepicker({
